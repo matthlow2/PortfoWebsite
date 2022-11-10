@@ -23,7 +23,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
         <Text
           color={useColorModeValue('gray.800', 'whiteAplha.900')}
           fontFamily="M PLUS ROUNDED 1c"
