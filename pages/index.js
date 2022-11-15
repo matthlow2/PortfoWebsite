@@ -5,6 +5,10 @@ import {
   Heading,
   Image,
   chakra,
+  SimpleGrid,
+  List,
+  ListItem,
+  Link,
   useColorModeValue
 } from '@chakra-ui/react'
 import Section from '../components/section'
@@ -13,6 +17,13 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord,
+  IoLogoFacebook
+} from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -111,6 +122,30 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://instagram.com/matt_low_" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoInstagram />}
+                >
+                  @matt_low_
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://facebook.com/matthlow2" target="_black">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoFacebook />}
+                >
+                  @Matthew Low
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
