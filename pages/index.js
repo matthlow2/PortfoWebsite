@@ -5,7 +5,7 @@ import {
   Heading,
   Image,
   chakra,
-  SimpleGrid,
+  // SimpleGrid,
   List,
   ListItem,
   Link,
@@ -17,11 +17,11 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 import {
   IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoDiscord,
+  // IoLogoGithub,
+  // IoLogoDiscord,
   IoLogoFacebook
 } from 'react-icons/io5'
 

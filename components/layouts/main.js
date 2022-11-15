@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../navbar'
-import noSsr from '../no-ssr'
+// import noSsr from '../no-ssr'
 import { Box, Container } from '@chakra-ui/react'
-import VoxelMatt from '../voxel-matt'
+// import VoxelMatt from '../voxel-matt'
 
 const Main = ({ children, router }) => {
   return (
