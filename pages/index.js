@@ -48,7 +48,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Matthew Low
             </Heading>
-            <p>I dun know what I need to type here</p>
+            <div>I dun know what I need to type here</div>
           </Box>
           <Box
             flexShrink={0}

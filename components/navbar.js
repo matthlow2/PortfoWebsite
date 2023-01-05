@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoBitbucket } from 'react-icons/io5'
 // import Section from './section'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -72,32 +72,32 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
+          <LinkItem href="/about" path={path}>
+            About
+          </LinkItem>
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
+          {/* <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://bitbucket.org/dashboard/repositories"
+            href="https://bitbucket.org/matthlow2/"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
-            <IoLogoGithub />
+            <IoLogoBitbucket />
             Source
           </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
-          {/* <Section delay={0.1}> */}
           <ThemeToggleButton />
-          {/* </Section> */}
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -122,12 +122,9 @@ const Navbar = props => {
                 >
                   <MenuItem as={Link}>Uses</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://bitbucket.org/dashboard/repositories"
-                >
-                  View Source
-                </MenuItem>
+                <NextLink href="https://bitbucket.org/matthlow2/">
+                  <MenuItem as={Link}>View Source</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>
