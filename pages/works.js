@@ -20,11 +20,11 @@ const works = () => {
           <Section>
             <WorkGridItem
               id="webscraping"
-              title="Web-Scraping"
+              title="Marketing Web Scraping"
               thumbnail={thumbWebScraping}
             >
-              A web scraping program that loops through all your dedicated
-              website
+              A data scraping program that extracting data from dedicated
+              websites
             </WorkGridItem>
           </Section>
         </SimpleGrid>

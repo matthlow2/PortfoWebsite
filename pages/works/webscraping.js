@@ -9,10 +9,10 @@ const Work = () => {
     <Layout title="webscrap">
       <Container>
         <Title>
-          Web Scrap <Badge>2022</Badge>
+          Marketing Web Scraping <Badge>2022</Badge>
         </Title>
         <P>
-          A web scraping program that loops through all your dedicated website
+          A data scraping program that extracting data from dedicated websites.
         </P>
         <List ml={4} my={4}>
           <ListItem>
