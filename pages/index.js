@@ -48,7 +48,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Matthew Low
             </Heading>
-            <div>Welcome to the space that I tried different new things!</div>
+            <div>Welcome to the space that I tried new things!</div>
           </Box>
           <Box
             flexShrink={0}
@@ -85,8 +85,13 @@ const Page = () => {
             Matthew is working in Peplink as a Backend developer.
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works"></NextLink>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button
+              as={NextLink}
+              href="/works"
+              scroll={false}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
               My Porfolio
             </Button>
           </Box>
