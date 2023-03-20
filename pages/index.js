@@ -17,13 +17,7 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-// import { GridItem } from '../components/grid-item'
-import {
-  IoLogoInstagram,
-  // IoLogoGithub,
-  // IoLogoDiscord,
-  IoLogoFacebook
-} from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoFacebook } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -81,9 +75,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
-            Matthew is working in Peplink as a Backend developer.
-          </Paragraph>
+          <Paragraph>I am working in Peplink as a Backend developer.</Paragraph>
           <Box align="center" my={4}>
             <Button
               as={NextLink}
